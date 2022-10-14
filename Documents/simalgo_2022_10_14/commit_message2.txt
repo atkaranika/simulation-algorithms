@@ -1,0 +1,10 @@
+corrected bug related to multiple definition of the variables in io.h during make
+we included io.h in io.c and simulator.c and we defined variables in io. This was wrong
+
+we fixed the bags:
+    i) define variables in io.h
+    ii)create simulator.h which contains the externals of the used function in simulator.c
+
+completed step1
+program accepts as input a spice file and it stores the nodes of circuit in a hashtable and
+all the information of each component into an array
